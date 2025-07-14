@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.semestre {
+  border: 2px solid #333;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.semestre h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.materia {
+  background-color: #e0e0e0;
+  padding: 6px 8px;
+  margin: 4px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.materia:hover {
+  background-color: #ccc;
+}
+
+.materia.activa {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
